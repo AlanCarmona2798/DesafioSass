@@ -1,0 +1,556 @@
+:root{
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    list-style-type: none;
+  }
+
+body{
+    
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    background: linear-gradient(rgb(255, 255, 255), rgb(145, 145, 145));
+    font-family: 'Roboto', sans-serif;
+        }
+  
+  :root {
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+  
+  header {
+    background: linear-gradient(#141e30, #0E6251);
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  header .links-header {
+    font-weight: 600;
+    padding-right: 10px;
+    /* Animacion */
+    transition: all 1s;
+  }
+  header .links-header ul {
+    display: flex;
+    gap: 25px;
+    margin-right: 10px;
+  }
+  header .links-header ul li a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+  }
+  header .links-header ul li a:hover {
+    color: rgb(180, 7, 248);
+    font-size: 20px;
+  }
+  
+  .logo img {
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    header {
+      flex-direction: column;
+    }
+    header .logo a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header .logo a .logo-img {
+      margin: 0%;
+    }
+    header .links-header ul {
+      flex-direction: column;
+    }
+    header .links-header ul li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header .links-header ul li a {
+      text-align: center;
+    }
+  }
+  .footer {
+    background: linear-gradient(#141e30, #0E6251);
+    padding: 10px;
+  }
+  .footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .redes {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  .footer .redes h2 {
+    text-align: center;
+  }
+  .footer .redes .imagen-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .redes .redes-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .redes .redes-footer li a {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  main .texts {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    font-family: "Poppins";
+  }
+  main .lista-mate ul {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  main .banner .p-banner {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+    font-size: 1.7rem;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .item {
+    position: relative;
+    padding-left: 1rem;
+  }
+  
+  .item::before {
+    content: "";
+    display: block;
+    background: slateblue;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-clip-path: var(--clippy);
+            clip-path: var(--clippy);
+    transition: -webkit-clip-path 2s;
+    transition: clip-path 2s;
+    transition: clip-path 2s, -webkit-clip-path 2s;
+  }
+  
+  .paragraph::before {
+    background: salmon;
+  }
+  
+  .item:hover::before {
+    -webkit-clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+  }
+  
+  ul.lista-mate {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  li.lista-mate {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .boton button {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+    color: #48cf65;
+    background-color: rgb(238, 17, 17);
+  }
+  
+  .boton button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button:hover {
+    text-decoration: none;
+    background-color: rgb(180, 7, 248);
+  }/*# sourceMappingURL=estilo.css.map */
+
+
+
+
+
+
+
+
+
+
+.links-header{
+    font-weight: 600;
+    padding-right: 10px;
+    /* Animacion */
+    transition: all 1s;
+ 
+}
+
+/* animacion */
+nav a:hover{
+    color: rgb(180, 7, 248);
+    font-size: 20px 
+}
+
+body h3{
+    text-decoration: dotted;
+    color: rgb(255, 255, 255);
+}
+
+body p{
+    text-decoration: double;
+    color: rgb(255, 255, 255);
+    font-family: "roboco";
+    font-size: large;
+}
+
+.tipos-mate h2{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+.lista-mate li{
+    border: 70px;
+    color: rgb(10, 10, 10);
+    font-size: medium;
+    font-family: fantasy;
+    text-decoration: underline;
+    padding: 20px;
+    margin: 5px;
+    
+}
+
+
+
+footer p{
+    color: deeppink;
+}
+
+footer h2{
+    color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style-type: square;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer ul{
+    text-decoration: none;
+
+    color: rgb(180, 7, 248);
+}
+
+.redes a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.footer-color{
+    background: linear-gradient(#141e30, #0E6251);
+    padding: 10px;
+}
+
+.redes-footer li{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.redes h2{
+    text-align: center;
+}
+
+/* Productos */
+
+.nuestros-productos h2{
+    color: rgb(0, 0, 0);
+    background-color: beige;
+    text-decoration: none;
+    margin: 10px 50px 30px 10px;
+    text-align: center;
+}
+
+.titulos-tipos-mates h4{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+.card-text{
+    color: black;
+}
+
+.card-group{
+    margin-bottom: 60px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 5px 10px black;
+    transition: all 1s;
+}
+
+
+/* quienes somos? */
+
+
+.sobre-nosotros li{
+    border: 10px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 0px;
+    background-image: url(../imagenes/dark-brown-background-free-photo.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/* registro */
+
+.footer-color-registro{
+    padding: 40px;
+    margin: -5px;
+    background-color: beige;
+}
+
+
+.parrafo_form p{
+    color: rgb(0, 0, 0);
+}
+
+.Registro_form{
+    width: 500px;
+    background: linear-gradient(#abc5f5, #76f8de);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "Poppins";
+}
+
+.Registro_form h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.Registro_form p{
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.controles {
+    width: 100%;
+    background-color: #f3f4f5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.parrafo_form a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-crear-cuenta-2 a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: lightcoral;
+    border: none;
+    border-radius: 14px;
+    padding: 7px;
+    font-size: 24px;
+}
+
+.boton-crear-cuenta-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+/* Videos de mates */
+
+
+.preparacion_mate{
+    text-align: center;
+    margin: 10px;
+    background-color: beige;
+    font-family: "Roboto";
+}
+
+.titulo-preparacion h3{
+    color: black;
+    font-size: 30px;
+}
+
+.titulo-preparacion-2 p{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px
+}
+
+.videos-yt{
+    display: flex;
+    justify-content: center;
+    border-style: outset;
+    border-radius: 50px;
+
+}
+
+.videos-yt h3{
+    color: black;
+    font-size: x-large;
+    text-transform: uppercase;
+    margin-top: 100px;
+    margin-right: 200px;
+}
+
+.hayan-servido{
+    text-decoration: solid;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: beige;
+}
+
+/* copy */
+
+.copyright{
+    text-align: center;
+}
+
+.imagen-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* galeria */
+
+.galeria-img{
+    width: 100%;
+    margin-bottom: 30px;
+    transition: all 1s;
+}
+
+.galeria-img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 5px 10px black;
+}
+
+.texto-galeria{
+    color: #000000;
+}
+
+
+
+/* ------------------------------------------------------- video preparacion mate ----------------------------------------- */
+
+/* ------------------------------------------------------ Animaciones ------------------------------------------------------ */
+
+.texts{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    color: black;
+    font-family: "Poppins"
+}
+
+
+
+.name{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+    font-family: "Poppins"
+}
+
+.paragraph{
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(5, 5, 5);
+    font-family: "Poppins"
+}
+
+.item{
+    position: relative;
+    padding-left: 1rem;
+
+}
+
+.item::before{
+    content: "";
+    display: block;
+    background: slateblue;
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: var(--clippy);
+    transition: clip-path 2s;
+}
+
+.paragraph::before{
+    background: salmon;
+    
+}
+
+.item:hover::before{
+    clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
+}
