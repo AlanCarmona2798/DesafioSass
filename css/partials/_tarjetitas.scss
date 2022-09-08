@@ -1,32 +1,35 @@
 .imagenPrincipal{
-    border-top: 100px;
+    @extend .radius
 }
 
-.tarjetitas {
-   padding: 60px ;
-   display: flex ;
-   gap: 30px ;
+.tarjetitas-container {
+    display: flex;
+    gap: 200px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .tarjetita {
-        background-color: $mainColor;
-        border-radius: 30px;
-        overflow: hidden;
+
+        width: 450px;
+        @include caja_destacadas;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        flex: 1;
+        justify-content: center;
+        
 
         .informacion {
             padding : 0 20px 20px 20px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
         }
                               
         .tarjetita_imagen {
             max-width: 100%;
+            
         }
         
-        &.tarjetitados {
-            flex: 1.5;
-        }
-
     }
 }
