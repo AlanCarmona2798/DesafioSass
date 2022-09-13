@@ -1,5 +1,14 @@
-.imagenPrincipal{
+.Titulo-Destacados{
     @extend .radius
+    
+}
+
+.Destacados-texto{
+
+    display: flex;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .tarjetitas-container {
@@ -11,7 +20,7 @@
 
     .tarjetita {
 
-        width: 450px;
+        width: 350px;
         @include caja_destacadas;
         display: flex;
         flex-direction: column;

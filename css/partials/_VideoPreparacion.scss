@@ -22,6 +22,7 @@
     justify-content: center;
     border-style: outset;
     border-radius: 50px;
+    width: 100%;
 
 }
 
@@ -40,4 +41,11 @@
     margin-bottom: 10px;
     color: black;
     background-color: beige;
+}
+
+
+@media screen and (max-width: 900px) {
+.video-mate{
+    width: 100%;
+    }
 }

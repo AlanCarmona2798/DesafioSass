@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 
-.radius, .imagenPrincipal {
+.radius, .Titulo-Destacados {
   border-radius: 30px;
 }
 
@@ -302,6 +302,13 @@ main .banner .p-banner {
   color: black;
 }
 
+.Destacados-texto {
+  display: flex;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
 .tarjetitas-container {
   display: flex;
   gap: 200px;
@@ -310,7 +317,7 @@ main .banner .p-banner {
   flex-wrap: wrap;
 }
 .tarjetitas-container .tarjetita {
-  width: 450px;
+  width: 350px;
   border-radius: 69px;
   background: #55e2c6;
   box-shadow: inset -10px -10px 20px #48c0a8, inset 10px 10px 20px #62ffe4;
@@ -347,6 +354,28 @@ main .banner .p-banner {
   transform: scale(1.1);
   box-shadow: 10px 5px 10px black;
   transition: all 1s;
+}
+
+.texts {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: black;
+  font-family: "Poppins";
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins";
+}
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgb(5, 5, 5);
+  font-family: "Poppins";
 }
 
 @media screen and (max-width: 900px) {
@@ -407,6 +436,7 @@ main .banner .p-banner {
   padding: 30px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   border-radius: 4px;
   font-family: "Poppins";
 }
@@ -457,6 +487,11 @@ main .banner .p-banner {
   margin-top: 1rem;
 }
 
+@media screen and (max-width: 900px) {
+  .Registro_form {
+    width: 100%;
+  }
+}
 .preparacion_mate {
   text-align: center;
   margin: 10px;
@@ -481,6 +516,7 @@ main .banner .p-banner {
   justify-content: center;
   border-style: outset;
   border-radius: 50px;
+  width: 100%;
 }
 
 .videos-yt h3 {
@@ -499,4 +535,10 @@ main .banner .p-banner {
   margin-bottom: 10px;
   color: black;
   background-color: beige;
+}
+
+@media screen and (max-width: 900px) {
+  .video-mate {
+    width: 100%;
+  }
 }/*# sourceMappingURL=estilo.css.map */
