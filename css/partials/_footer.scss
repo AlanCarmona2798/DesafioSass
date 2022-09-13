@@ -27,9 +27,11 @@
             align-items: center;
             li{
                 a{
-                    color: blueviolet;
-                    text-decoration: none;
-            
+                    color: rgb(253, 253, 253);
+                   
+                &:hover{
+                    color: $mainColor;
+                }
                 }
             }
         }

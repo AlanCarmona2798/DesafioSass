@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+.mapa-iframe {
+  width: 100%;
+}
+
 .radius, .imagenPrincipal {
   border-radius: 30px;
 }
@@ -125,8 +133,10 @@ header .links-header ul li a:hover {
   align-items: center;
 }
 .footer .redes .redes-footer li a {
-  color: blueviolet;
-  text-decoration: none;
+  color: rgb(253, 253, 253);
+}
+.footer .redes .redes-footer li a:hover {
+  color: rgb(180, 7, 248);
 }
 
 /* copy */
@@ -228,16 +238,21 @@ main .banner .p-banner {
           clip-path: polygon(0 0, 81% 0, 100% 100%, 0 100%);
 }
 
-ul.lista-mate {
+.lista-mate {
   list-style-type: square;
   margin: 10px;
   padding: 10px;
 }
 
-li.lista-mate {
+.lista-mate li {
   list-style-type: square;
   margin: 10px;
   padding: 10px;
+  border: 70px;
+  color: rgb(10, 10, 10);
+  font-size: medium;
+  font-family: fantasy;
+  text-decoration: underline;
 }
 
 .tarjetita_boton {
@@ -313,6 +328,14 @@ li.lista-mate {
   max-width: 100%;
 }
 
+@media screen and (max-width: 900px) {
+  .tarjetita {
+    width: 300px;
+  }
+  .informacion {
+    padding: 0;
+  }
+}
 .card-group {
   margin-bottom: 60px;
 }
@@ -326,6 +349,15 @@ li.lista-mate {
   transition: all 1s;
 }
 
+@media screen and (max-width: 900px) {
+  .card-group {
+    gap: 0;
+  }
+  .card-group .card {
+    width: 100%;
+    padding: 0;
+  }
+}
 .sobre-nosotros li {
   border: 10px;
   color: rgb(255, 255, 255);
@@ -337,6 +369,10 @@ li.lista-mate {
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
+}
+
+.quienes-somos-imagen {
+  width: 100%;
 }
 
 .galeria-img {

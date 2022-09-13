@@ -64,18 +64,25 @@ main{
     }
 
 
-ul.lista-mate {
+.lista-mate {
     list-style-type: square;
     margin: 10px;
     padding: 10px;
     
 }
 
-li.lista-mate{
+.lista-mate li{
     list-style-type: square;
     margin: 10px;
     padding: 10px;
+    border: 70px;
+    color: rgb(10, 10, 10);
+    font-size: medium;
+    font-family: fantasy;
+    text-decoration: underline;
 }
+
+
 
 
 .tarjetita_boton{

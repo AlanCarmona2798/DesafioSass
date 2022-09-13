@@ -61,62 +61,7 @@ body{
     margin-right: 10px;
   }
   
-  @media screen and (max-width: 900px) {
-    header {
-      flex-direction: column;
-    }
-    header .logo a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header .logo a .logo-img {
-      margin: 0%;
-    }
-    header .links-header ul {
-      flex-direction: column;
-    }
-    header .links-header ul li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    header .links-header ul li a {
-      text-align: center;
-    }
-  }
-  .footer {
-    background: linear-gradient(#141e30, #0E6251);
-    padding: 10px;
-  }
-  .footer .copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer .redes {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5px;
-  }
-  .footer .redes h2 {
-    text-align: center;
-  }
-  .footer .redes .imagen-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .footer .redes .redes-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer .redes .redes-footer li a {
-    color: blueviolet;
-    text-decoration: none;
-  }
+ 
   
   main .texts {
     margin: auto;
@@ -223,10 +168,6 @@ body{
 }
 
 /* animacion */
-nav a:hover{
-    color: rgb(180, 7, 248);
-    font-size: 20px 
-}
 
 body h3{
     text-decoration: dotted;
@@ -261,26 +202,7 @@ body p{
 
 
 
-/* Productos */
 
-.nuestros-productos h2{
-    color: rgb(0, 0, 0);
-    background-color: beige;
-    text-decoration: none;
-    margin: 10px 50px 30px 10px;
-    text-align: center;
-}
-
-.titulos-tipos-mates h4{
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-}
-
-
-
-
-
-/* ------------------------------------------------------- video preparacion mate ----------------------------------------- */
 
 /* ------------------------------------------------------ Animaciones ------------------------------------------------------ */
 
