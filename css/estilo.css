@@ -23,38 +23,6 @@ body {
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-header {
-  background: linear-gradient(#141e30, #0E6251);
-  border-top: black 3px solid;
-  border-bottom: black 3px solid;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-}
-header .links-header {
-  font-weight: 600;
-  padding-right: 10px;
-  /* Animacion */
-  transition: all 1s;
-}
-header .links-header ul {
-  display: flex;
-  gap: 25px;
-  margin-right: 10px;
-}
-header .links-header ul li a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-header .links-header ul li a:hover {
-  color: rgb(180, 7, 248);
-  font-size: 20px;
-}
-
 @-webkit-keyframes swirl-in-fwd {
   0% {
     transform: rotate(-540deg) scale(0);
@@ -104,85 +72,7 @@ header .links-header ul li a:hover {
     text-align: center;
   }
 }
-.footer {
-  background: linear-gradient(#141e30, #0E6251);
-  padding: 10px;
-}
-.footer .copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer .redes {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 5px;
-}
-.footer .redes h2 {
-  text-align: center;
-}
-.footer .redes .imagen-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer .redes .redes-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer .redes .redes-footer li a {
-  color: rgb(253, 253, 253);
-}
-.footer .redes .redes-footer li a:hover {
-  color: rgb(180, 7, 248);
-}
 
-/* copy */
-.copyright {
-  text-align: center;
-}
-
-footer p {
-  color: deeppink;
-}
-
-footer h2 {
-  color: rgb(255, 255, 255);
-}
-
-ul {
-  list-style-type: square;
-  margin: 10px;
-  padding: 10px;
-}
-
-footer ul {
-  text-decoration: none;
-  color: rgb(180, 7, 248);
-}
-
-.redes a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding: 5px;
-}
-
-.footer-color {
-  background: linear-gradient(#141e30, #0E6251);
-  padding: 10px;
-}
-
-.redes-footer li {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.redes h2 {
-  text-align: center;
-}
 
 main .texts {
   margin: auto;
